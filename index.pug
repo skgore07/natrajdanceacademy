@@ -1,0 +1,64 @@
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+  body
+  
+    nav#navbar 
+        ul#navbarul
+            div.logo
+                img(src="/static/logo.png", alt="") 
+                | NDA
+            li #[a(href='/') home]
+            li #[a(href='/') About]
+            li #[a(href='/') Services]
+            li #[a(href='/') Info]
+            li #[a(href='/') Contact us]
+    section#introsection 
+        div Welcome to Natraj dance academy 
+        div.small Eat Sleep Dance Repeat
+    section#missionsection 
+        h2 Our mission
+        div#c1.card
+            h3 Dance Perfection
+        div#c2.card
+            h3 Expert Teachers
+        div#c3.card
+            h3 Enjoy Learning
+    section#contentsection 
+        h2 Our Sponsers
+        div.sponsers
+            img(src="/static/sp1.jpg", alt="sponser image" ,class="spimg")
+            img(src="/static/sp2.jpg", alt="sponser image" ,class="spimg")
+            img(src="/static/sp3.jpg", alt="sponser image" ,class="spimg")
+            img(src="/static/sp4.jpg", alt="sponser image" ,class="spimg")
+
+    footer#footer 
+        div.copyright
+            img(src="/static/logo.png", alt="")
+            |&copy; 2022 Natraj Dance Academy
+        div.footercontent
+            div#about.a-style
+                p ABOUT
+                a(href="/") OUR VISION 
+                a(href="/") ALUMINI 
+                a(href="/") FACEBOOK 
+                a(href="/") INSTAGRAM 
+            div#information.a-style
+                p INFORMATION 
+                a(href="/") DANCE TEACHERS 
+                a(href="/") TIMETABLE 
+                a(href="/") HELP 
+            div.contact
+                button CONTACT US 
+                div.contactlink
+                    img(src="/static/email.png", alt="" class="social" id="mail")
+                    img(src="/static/instagram.png", alt="" class="social" id="insta")
+                    img(src="/static/facebook.png", alt="" class="social" id="fb")     
+
+    script
+      include ../static/index.js
