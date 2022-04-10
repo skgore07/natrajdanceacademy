@@ -1,0 +1,41 @@
+doctype html 
+html 
+    head 
+        title Natraj | Best Dance Academy
+        block scripts 
+        block style 
+        
+    body 
+        nav#navbar 
+            ul#navbarul
+                div.logo
+                    img(src="/static/logo.png", alt="") 
+                    | NDA
+                    li #[a(href='/') home]
+                    li #[a(href='/') About]
+                    li #[a(href='/') Services]
+                    li #[a(href='/') Info]
+                    li #[a(href='/contact') Contact us]
+        block content 
+        footer#footer 
+         div.copyright
+            img(src="/static/logo.png", alt="")
+            |&copy; 2022 Natraj Dance Academy
+         div.footercontent
+            div#about.a-style
+                p ABOUT
+                a(href="/") OUR VISION 
+                a(href="/") ALUMINI 
+                a(href="/") FACEBOOK 
+                a(href="/") INSTAGRAM 
+            div#information.a-style
+                p INFORMATION 
+                a(href="/") DANCE TEACHERS 
+                a(href="/") TIMETABLE 
+                a(href="/") HELP 
+            div.contact
+                button CONTACT US 
+                div.contactlink
+                    img(src="/static/email.png", alt="" class="social" id="mail")
+                    img(src="/static/instagram.png", alt="" class="social" id="insta")
+                    img(src="/static/facebook.png", alt="" class="social" id="fb")     

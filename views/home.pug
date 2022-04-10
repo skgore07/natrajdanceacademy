@@ -1,0 +1,25 @@
+extends base.pug
+block scripts 
+    script(src="/static/index.js")
+block style 
+    style 
+        include ../static/style.css
+block content
+    section#introsection 
+        div Welcome to Natraj dance academy 
+        div.small Eat Sleep Dance Repeat
+    section#missionsection 
+        h2 Our mission
+        div#c1.card
+            h3 Dance Perfection
+        div#c2.card
+            h3 Expert Teachers
+        div#c3.card
+            h3 Enjoy Learning
+    section#contentsection 
+        h2 Our Sponsers
+        div.sponsers
+            img(src="/static/sp1.jpg", alt="sponser image" ,class="spimg")
+            img(src="/static/sp2.jpg", alt="sponser image" ,class="spimg")
+            img(src="/static/sp3.jpg", alt="sponser image" ,class="spimg")
+            img(src="/static/sp4.jpg", alt="sponser image" ,class="spimg")
